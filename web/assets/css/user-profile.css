@@ -1,0 +1,55 @@
+body{
+    margin: 0px; padding: 0px;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+.container{
+    display: grid;
+    place-items: center;
+    height: inherit;
+}
+.user-profile{
+    width: 250px;
+    background-color: #ffffff2e;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid gainsboro;
+    backdrop-filter: blur(10px);
+}
+.user-profile > .card-header{
+    text-align: center;
+}
+.user-profile > .card-header > img{
+    height: 80px; width: 80px;
+    border-radius: 50px;
+}
+.card-body > :where(.links, .btns){
+    text-align: center;
+}
+.card-body > .links{
+    margin:  16px 0px;
+    font-size: 24px;
+}
+.card-body > .links > a:nth-child(1){
+    color: #063360ff;
+}
+.card-body > .links > a:nth-child(2){
+    color: #217edbff;
+}
+.card-body > .links > a:nth-child(3){
+    color: tomato;
+}
+.card-body > .btns > button:nth-child(1){  
+    margin-right: 8px;
+}
+.card-body > .btns > button{
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff6e;
+
+}
