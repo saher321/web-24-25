@@ -1,0 +1,27 @@
+
+body{
+    margin: 0px; padding: 0px;
+    background-color: #999;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border-top: 2px solid red !important;
+    border: 2px solid white;
+    animation-name: loader;
+    border-radius: 60px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
