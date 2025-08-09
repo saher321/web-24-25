@@ -1,0 +1,37 @@
+.parent{
+    border: 5px dashed #000;
+    height: 400px;
+    width: 500px;
+    /* position: relative; */
+}
+.child{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    position: absolute;
+    /* top: 0; */
+    right: 0;
+    bottom: 0;
+}
+/* pesudo element */
+
+h1{
+    color: #999;
+    position: relative;
+    cursor: pointer;
+    width: max-content;
+}
+h1::before{
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    position: absolute;
+    background: #2A7B9B;
+    transition: all .3s;
+background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    bottom: 0;
+}
+h1:hover::before{
+    width: 100px;
+}
