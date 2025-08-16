@@ -1,0 +1,12 @@
+
+h1{
+    color: var(--txt-clr);
+    background-color: var(--bg-clr);
+    border: var(--border);
+    font-family: var(--txt-font);
+    box-shadow: var(--box-shadow);
+}
+h2{
+    color: var(--txt-clr2);
+    font-family: var(--txt-font);
+}
