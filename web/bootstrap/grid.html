@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grid system</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .row div
+         {
+            border: 2px solid #999;
+            background-color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">Column with 12 </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-2">4 col</div>
+        <div class="col-lg-8">8 col</div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">4 col</div>
+        <div class="col-lg-5 col-md-6">5 col
+            <div class="row">
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+            </div>
+        </div>
+        <div class="col-lg-3">3 col</div>
+    </div>
+</body>
+
+</html>
