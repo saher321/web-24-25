@@ -16,7 +16,7 @@ var c = a + b;
 console.log("The result is: " + c);
 
 // sum function
-function getSum(){
+function getSum() {
     var number1 = document.getElementById("no1").value;
     var number2 = document.getElementById("no2").value;
     var output = document.getElementById("output");
@@ -27,12 +27,29 @@ function getSum(){
     var sum = parseInt(number1) + parseInt(number2) + 3 + (parseInt(number1) + parseInt(number2));
     output.innerText = sum;
 }
-function findPercentage(){
+function findPercentage() {
     var totalMarks = 1100;
     var sbj1 = document.getElementById("sbj1").value;
     var sbj2 = document.getElementById("sbj2").value;
     var output = document.getElementById("output");
     var obtainedMarks = parseInt(sbj1) + parseInt(sbj2);
-    var percentage = (obtainedMarks/totalMarks) * 100;
+    var percentage = (obtainedMarks / totalMarks) * 100;
     output.innerText = percentage;
+}
+
+function getRemarks() {
+    var criteria = 500;
+    var totalMarks = 1100;
+    var obtainedMarks = document.getElementById("obtainedMarks").value;
+
+    if (obtainedMarks >= criteria && obtainedMarks <= totalMarks) { // defined range
+        // statement true
+        output.innerText = "Passed";
+    } else if (obtainedMarks >= totalMarks) {
+        output.innerText = "Invalid marks: Range 0 - 1100";
+    }
+    else {
+        // statement false
+        output.innerText = "Failed";
+    }
 }
