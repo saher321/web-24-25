@@ -59,34 +59,63 @@ const users = [
   { id: 1, name: "Martha", role: "admin" },
   { id: 2, name: "John", role: "user" },
   { id: 3, name: "Sara", role: "admin" },
-  { id: 4, name: "Steve", role: "user" }
+  { id: 4, name: "Preeha", role: "vendor" },
+  { id: 5, name: "Steve", role: "user" },
+  { id: 6, name: "Alice", role: "user" },
+  { id: 7, name: "John Snow", role: "user" },
+  { id: 8, name: "Alex", role: "vendor" },
+  { id: 9, name: "Sam", role: "vendor" }
 ];
 
-let tBody = document.getElementById("data-body");
-
-users.map((user) => { 
-  let tRow = `
+fetchData();
+function fetchData() {
+  let tBody = document.getElementById("data-body");
+  tBody.innerHTML = "";
+  users.map((user) => {
+    let tRow = `
   <tr>
     <td>${user.id}</td>
     <td>${user.name}</td>
     <td>${user.role}</td>
   </tr>
   `;
-  tBody.innerHTML += tRow;
- });
-
-
-const userRole = "admin";
-function check(users) {
-  if (users.role == userRole) {
-    return users;
-  }
+    tBody.innerHTML += tRow;
+  });
 }
 
-let output = users.filter(check)
-console.log(output);
 
-function filterData () {
+// filter data
+function filterData() {
+  let tBody = document.getElementById("data-body");
   let selectedRole = document.getElementById("role").value;
-  if (selectedRole == "")  return false;
+  // console.log(selectedRole);
+  if (selectedRole == "") {
+    fetchData();
+  } else {
+    tBody.innerHTML = "";
+    users.filter((user)=>{
+      if(selectedRole == user.role){
+        let tRow = `
+        <tr>
+          <td>${user.id}</td>
+          <td>${user.name}</td>
+          <td>${user.role}</td>
+        </tr>
+        `;
+        tBody.innerHTML += tRow;
+      }
+    })
+  };
+
 }
+
+// const userRole = "admin";
+// function check(users) {
+//   if (users.role == userRole) {
+//     return users;
+//   }
+// }
+
+// let output = users.filter(check)
+// console.log(output);
+
