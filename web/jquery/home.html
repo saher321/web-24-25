@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <h1>This is heading for jquery</h1>
+  <input type="number" id="no1">
+  <input type="number" id="no2">
+  <br> <br>
+
+  <button id="btn">Click</button>
+
+  <p id="result"></p>
+  <!-- js -->
+  
+  <script src="../assets/js/jquery-3.7.min.js"></script>
+  <script>
+    $(document).ready(function (){
+      let headingTxt = $("h1").text();
+      console.log(headingTxt);
+
+      // ***********************************
+
+      $("#btn").on("click", function(){
+        let no1 = $("#no1").val();
+        let no2 = $("#no2").val();
+        let sum = Number(no1)+Number(no2);
+        $("#result").text(sum)
+      })
+
+    });
+  </script>
+</body>
+</html>

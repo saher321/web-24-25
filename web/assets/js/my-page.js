@@ -83,7 +83,6 @@ function fetchData() {
   });
 }
 
-
 // filter data
 function filterData() {
   let tBody = document.getElementById("data-body");
