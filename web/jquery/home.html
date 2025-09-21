@@ -8,6 +8,10 @@
 <body>
   
 
+  <input type="password" id="password">
+  <input type="checkbox" id="check">
+  <hr>
+
   <h1>This is heading for jquery</h1>
   <input type="number" id="no1">
   <input type="number" id="no2">
@@ -16,11 +20,25 @@
   <button id="btn">Click</button>
 
   <p id="result"></p>
+
+  <hr>
+  <button id="toggle">Show/Hide</button>
+  <p id="text">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus pariatur culpa at dolorem eligendi praesentium libero voluptas, magni aliquid velit quod aperiam maxime saepe commodi deserunt, a assumenda ipsum ab?
+  </p>
   <!-- js -->
   
   <script src="../assets/js/jquery-3.7.min.js"></script>
   <script>
     $(document).ready(function (){
+
+      $("#check").click(function (){
+        $(this).prop('checked') ? // ternary condition
+        $("#password").prop('type', 'text') : // true
+        $("#password").prop('type', 'password') // false
+      });
+
+      // **********************************
       let headingTxt = $("h1").text();
       console.log(headingTxt);
 
@@ -31,7 +49,13 @@
         let no2 = $("#no2").val();
         let sum = Number(no1)+Number(no2);
         $("#result").text(sum)
-      })
+      });
+
+      // *********************************************
+
+      $("#toggle").on("click", function(){
+        $("#text").fadeToggle();
+      });
 
     });
   </script>
