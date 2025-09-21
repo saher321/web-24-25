@@ -1,18 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import blogs from './utils/blogs.js'
 import BlogCard from './components/BlogCard.jsx'
 
 const App = () => {
+  const [ pageTitle, setPageTitle ] = useState("Blogs");
 
   return (
     <div>
-      <h1>Blogs</h1>
+      <h1>{pageTitle ? pageTitle : "Untitled" }</h1>
       <div className='card-wrapper'>
       {
         blogs.length > 0 ?
-        blogs.map((blog, i)=>{
+        blogs.map((blog)=>{
           return (
-            <BlogCard key={i} blog={blog}/>
+            <BlogCard key={blog.id} blog={blog}/>
           )
         }) : "No data to show"
       }
