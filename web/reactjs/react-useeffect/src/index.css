@@ -1,0 +1,13 @@
+/* @import "tailwindcss"; */
+
+.card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.user-card{
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 12px; 
+  border-radius: 12px;
+}
