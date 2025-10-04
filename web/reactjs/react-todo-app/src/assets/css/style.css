@@ -1,0 +1,6 @@
+@import "tailwindcss";
+.colordiv {
+  height: 200px;
+  width: 400px;
+
+}

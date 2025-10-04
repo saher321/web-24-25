@@ -1,0 +1,25 @@
+.navbar-wrapper > nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+.navbar-wrapper > nav > ul{
+  list-style: none;
+}
+.navbar-wrapper > nav > ul > li{
+  display: inline;
+  margin-left: 20px
+}
+
+/* page 404 css */
+.page-404{
+  display: flex;
+  justify-content: center
+}
+.page-404 > img{
+  height: 300px;
+  width: 300px;
+}
