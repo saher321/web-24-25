@@ -23,3 +23,27 @@
   height: 300px;
   width: 300px;
 }
+
+.red{
+  color: red;
+}
+.black{
+  color: black;
+}
+
+
+.card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.user-card{
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 12px; 
+  border-radius: 12px;
+  color: black
+}
+a{
+  text-decoration: none
+}

@@ -5,6 +5,7 @@ const Navbar = () => {
 
   const links = [
     {url: "/", title: "Home"},
+    {url: "/users", title: "Users"},
     {url: "/about", title: "About"},
     {url: "/blog", title: "Blog"},
   ];
@@ -18,7 +19,7 @@ const Navbar = () => {
             links.map((link, i)=>{
               return (
                 <li key={i}>
-                  <NavLink to={link.url}>{link.title}</NavLink>
+                  <NavLink to={link.url} className={(e) => e.isActive ? "red" : "black"}>{link.title}</NavLink>
                 </li>
               )
             })
