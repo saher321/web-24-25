@@ -2,7 +2,7 @@ import Notes from '../models/notesModel.js'
 
 export const getNotes = async (req, res) => {
   const notes = await Notes.find({});
-  res.send({ status: true, notes });
+  return res.send({ status: true, notes });
 }
 
 export const createNote = async (req, res) => {
@@ -15,13 +15,24 @@ export const createNote = async (req, res) => {
   try {
     const result = await Notes.create(note)
     if (result) {
-      res.send({status: true, message: "Note saved successfully"})
+      return res.send({status: true, message: "Note saved successfully"})
     } else {
-      res.send({status: false, message: "Failed to store note"})
+      return res.send({status: false, message: "Failed to store note"})
     }
   } catch (error) {
-    res.send({status: false, message: "Something went wrong!"})
+    return res.send({status: false, message: "Something went wrong!"})
   } finally {
-    res.send({status: false, message: "Internal server error"})
+    return res.send({status: false, message: "Internal server error"})
   }
+}
+
+
+export const deleteNote = async (req, res) => {
+  const id = req.params.id;
+  const notes = await Notes.findByIdAndDelete({ _id: id });
+  if (notes) {
+    return res.send({ status: true, message: "Note deleted successfully" });
+  } else {
+    return res.send({ status: false, message: "Note not found or it maybe deleted" });
+}
 }

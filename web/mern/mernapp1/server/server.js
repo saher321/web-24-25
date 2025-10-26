@@ -1,4 +1,4 @@
-// express, dotenv, cors, nodemon, jsonwebtoken
+// express, dotenv, mongoose, cors, nodemon, jsonwebtoken
 import express from 'express';
 import dotenv from 'dotenv';
 import { connectDB } from './config/db.js'
@@ -8,9 +8,9 @@ dotenv.config();
 
 
 // 3000, 5000, 7000, 8000, 8080
-const PORT =  5000;
+const PORT =  process.env.PORT || 5000;
 const PREFIX = '/api/v1';
-// middlewarte
+// middleware
 const app = express();
 app.use(cors())
 app.use(express.json())

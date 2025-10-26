@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
+import NotesList from './pages/NotesList';
 
 const App = () => {
   const { register, handleSubmit } = useForm();
@@ -28,6 +29,10 @@ const App = () => {
 
   return (
     <>
+    
+      <div>
+        <NotesList />
+      </div>
       <h2>CREATE NOTE</h2>
 
       <form onSubmit={handleSubmit(handleSaveNote)}>
@@ -35,6 +40,10 @@ const App = () => {
         <textarea { ...register("description") } rows={5} cols={25}></textarea> <br /><br />
         <button type='submit'>Save note</button>
       </form>
+      <hr />
+      <div>
+        <h2>Notes Data</h2>
+      </div>
     </>
   )
 }
