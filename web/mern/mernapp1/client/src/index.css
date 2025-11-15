@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 500px;
+  margin: 12px auto;
+  background-color: #212121ff;
+  color: white;
+  padding: 16px 12px;
+  border-radius: 12px;
+}
+main {
+  max-width: 500px;
+  margin: 12px auto;
+}
+
+label {
+  display: block
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+button, a {
+  color: #212121ff;
+  text-decoration: none;
+  background-color: white;
+  padding: 4px;
+  border-radius: 4px;
+}
+.action-btn > a {
+  color: white;
+  text-decoration: none;
+  background-color: #212121ff;
+  padding: 4px;
+  border-radius: 4px;  
+}

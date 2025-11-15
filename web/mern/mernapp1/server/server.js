@@ -1,9 +1,9 @@
 // express, dotenv, mongoose, cors, nodemon, jsonwebtoken
 import express from 'express';
 import dotenv from 'dotenv';
-import express from 'express';
 import { connectDB } from './config/db.js';
 import notesRoute from './routes/notesRoute.js';
+import cors from 'cors'
 dotenv.config();
 
 // 3000, 5000, 7000, 8000, 8080

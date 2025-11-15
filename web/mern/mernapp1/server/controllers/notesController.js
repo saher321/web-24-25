@@ -26,7 +26,6 @@ export const createNote = async (req, res) => {
   }
 }
 
-
 export const deleteNote = async (req, res) => {
   const id = req.params.id;
   const notes = await Notes.findByIdAndDelete({ _id: id });
@@ -34,5 +33,19 @@ export const deleteNote = async (req, res) => {
     return res.send({ status: true, message: "Note deleted successfully" });
   } else {
     return res.send({ status: false, message: "Note not found or it maybe deleted" });
+  }
 }
+
+export const detailNote = async (req, res) => {
+  const id = req.params.id;
+  try {
+    const note = await Notes.findById({_id: id});
+    if (note) {
+      return res.send({status: true, note})
+    } else {
+      return res.send({status: false, message: "Note not found or maybe deleted"})
+    }
+  } catch (error) {
+    console.log("Error: ", error)
+  }
 }
