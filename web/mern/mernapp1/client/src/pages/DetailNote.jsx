@@ -1,15 +1,16 @@
 
 import { useForm } from 'react-hook-form';
 import Navbar from '../components/Navbar';
-import { NavLink, useParams } from 'react-router';
+import { NavLink, useNavigate, useParams } from 'react-router';
 import toast from 'react-hot-toast';
-import { DETAIL_NOTE } from '../resources/api';
+import { DETAIL_NOTE, UPDATE_NOTE } from '../resources/api';
 import { useEffect } from 'react';
 import axios from 'axios';
 
 const DetailNote = () => {
   const { register, handleSubmit, reset } = useForm();
   const params = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const detailNote = async () => {
@@ -29,7 +30,13 @@ const DetailNote = () => {
   const handleUpdateNote = async (data) => {
 
     try {
-      console.log(data);
+      const response = await axios.patch(`${UPDATE_NOTE}/${params.id}`, data);
+      if (response.data && response.data.status == true){
+        toast.success(response.data.message);
+        navigate('/');
+      } else {
+        toast.error(response.data.message);
+      }
     } catch (error) {      
       toast.error("Something went wrong")
     }

@@ -49,3 +49,19 @@ export const detailNote = async (req, res) => {
     console.log("Error: ", error)
   }
 }
+
+export const updateNote = async (req, res) => {
+  const id = req.params.id;
+  const note = req.body;
+
+  try {
+    const result = await Notes.findByIdAndUpdate({_id: id}, note)
+    if (result) {
+      return res.send({status: true, message: "Note updated successfully"})
+    } else {
+      return res.send({status: false, message: "Failed to update note"})
+    }
+  } catch (error) {
+    return res.send({status: false, message: "Network error"})
+  }
+}
