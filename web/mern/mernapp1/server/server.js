@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import { connectDB } from './config/db.js';
 import notesRoute from './routes/notesRoute.js';
 import cors from 'cors'
+import userRoute from './routes/userRoute.js';
 dotenv.config();
 
 // 3000, 5000, 7000, 8000, 8080
@@ -14,6 +15,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use(PREFIX, userRoute);
 app.use(PREFIX, notesRoute);
 
 connectDB().then(() => {
