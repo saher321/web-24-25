@@ -12,7 +12,11 @@ const NotesList = () => {
   const getNotes = async () => {
       try {
         setIsLoading(true)
-        const res = await fetch(ALL_NOTES);
+        const res = await fetch(ALL_NOTES, {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("userToken")}`
+          }
+        });
         const data = await res.json();
         console.log(data.notes);
         if (data) {
