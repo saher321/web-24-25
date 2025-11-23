@@ -1,4 +1,5 @@
 import bcrypt from "bcryptjs";
+import jwt from 'jsonwebtoken'
 import User from '../models/userModel.js'
 
 export const signup = async (req, res) => {
@@ -34,7 +35,34 @@ export const signup = async (req, res) => {
   }
 }
 
-export const login = async (req, res) => {}
+export const login = async (req, res) => {
+  const data = req.body;
+  if (!data.email) return res.send({status: false, message: "Email fields is required"});
+  if (!data.password) return res.send({status: false, message: "Password fields is required"});
+
+  try {
+    const user = await User.findOne({email: data.email});
+    
+    if (!user) return res.send({status: false, message: "User isn't exist with this email"});
+
+    const isMatched = await bcrypt.compare(data.password, user.password)
+    if (!isMatched) return res.send({status: false, message: "Wrong password"});
+
+    const token = jwt.sign({
+      userID: user._id,
+      userEmail: user.email,
+    }, process.env.JWT_SECRET, { expiresIn: "7d"});
+
+    if (token) {
+      return res.send({status: true, message: "Loggedin successfull", userToken: token});
+    } else {
+      return res.send({status: false, message: "Failed to create session"});
+    }
+
+  } catch (error) {
+    console.log("Error: ", error);    
+  }
+}
 
 export const forgotPassword = async (req, res) => {}
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router'
 import NotesList from '../pages/NotesList'
 import CreateNote from '../pages/CreateNote';
 import DetailNote from '../pages/DetailNote';
@@ -21,7 +21,7 @@ const Routes = () => {
     { path: '/', element: <NotesList /> },
     { path: '/notes/create', element: <CreateNote /> },
     { path: '/notes/:id', element: <DetailNote /> },
-    { path: '*', element: <NotesList /> }
+    { path: '*', element: <Navigate to={'/'} replace /> }
   ]);
   return (
     <RouterProvider router={router} />
