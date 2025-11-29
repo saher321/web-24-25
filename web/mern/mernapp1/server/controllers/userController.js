@@ -1,6 +1,9 @@
+// forgot password :: nodemailer, nanoid 
 import bcrypt from "bcryptjs";
 import jwt from 'jsonwebtoken'
 import User from '../models/userModel.js'
+import { generateOTP } from "../utils/generateOTP.js";
+import { sendEmail } from "../utils/sendEmail.js";
 
 export const signup = async (req, res) => {
   const data = req.body;
@@ -64,7 +67,37 @@ export const login = async (req, res) => {
   }
 }
 
-export const forgotPassword = async (req, res) => {}
+export const forgotPassword = async (req, res) => {
+  const { email } = req.body;
+  if ( !email ) return res.send({status: false, message: "Please enter registered email"});
+  try {
+    let user = await User.findOne({email});
+    if ( !user ) return res.send({status: false, message: "User not found with this email"});
+
+    const otp = generateOTP();
+
+    const content = `
+    Hi ${user.name}, Here is your request OTP code.
+    <h1>${otp}</h1>
+    <small>Note: Please don't share this one time password (OTP) to anyone</small>
+    `
+    
+    user.otp = otp;
+    user.isVerified = false;
+    const ok = await user.save();
+
+    if (ok) {
+      sendEmail(user.email, "Reset password OTP code", content);
+      return res.send({status: true, message: "Check your email for reset password"})
+    } else {
+      return res.send({status: false, message: "Failed to send email"})
+    }
+
+
+  } catch (error) {
+    console.log("Error: ", error)
+  }
+}
 
 export const verifyOTP = async (req, res) => {}
 

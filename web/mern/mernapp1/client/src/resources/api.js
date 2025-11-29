@@ -3,7 +3,6 @@ export const BASE_URL           = "http://localhost:5000/api/v1";
 export const SIGNUP_URL         = BASE_URL + "/auth/signup";
 export const LOGIN_URL          = BASE_URL + "/auth/login";
 export const FORGOT_PASSWORD_URL= BASE_URL + "/auth/forgot-password";
-export const VERIFY_OTP_URL     = BASE_URL + "/auth/verify-otp";
 export const RESET_PASSWORD_URL = BASE_URL + "/auth/reset-password";
 
 export const ALL_NOTES    = BASE_URL + "/notes";
