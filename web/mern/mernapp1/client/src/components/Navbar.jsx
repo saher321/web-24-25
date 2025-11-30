@@ -1,6 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router';
 
 const Navbar = ({ children }) => {
+  const navigate = useNavigate();
+  // const handleLogout = () => {
+  //   localStorage.removeItem("userToken");
+  //   navigate('/login')
+  // }
   return (
     <>
     <nav>
@@ -8,6 +14,7 @@ const Navbar = ({ children }) => {
       <div>
         { children }
       </div>
+      {/* <button onClick={handleLogout}>Logout</button> */}
     </nav>
     </>
   )

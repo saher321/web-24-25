@@ -39,16 +39,16 @@ export const signup = async (req, res) => {
 }
 
 export const login = async (req, res) => {
-  const data = req.body;
-  if (!data.email) return res.send({status: false, message: "Email fields is required"});
-  if (!data.password) return res.send({status: false, message: "Password fields is required"});
+  const {email, password} = req.body;
+  if (!email) return res.send({status: false, message: "Email fields is required"});
+  if (!password) return res.send({status: false, message: "Password fields is required"});
 
   try {
-    const user = await User.findOne({email: data.email});
+    const user = await User.findOne({email});
     
     if (!user) return res.send({status: false, message: "User isn't exist with this email"});
 
-    const isMatched = await bcrypt.compare(data.password, user.password)
+    const isMatched = await bcrypt.compare(password, user.password)
     if (!isMatched) return res.send({status: false, message: "Wrong password"});
 
     const token = jwt.sign({
@@ -99,6 +99,31 @@ export const forgotPassword = async (req, res) => {
   }
 }
 
-export const verifyOTP = async (req, res) => {}
+export const resetPassword = async (req, res) => {
+  const {email, otp, newPassword} = req.body;
+  
+  if (!email) return res.send({status: false, message: "Email is not given"});
+  if (!otp) return res.send({status: false, message: "Otp fields is required"});
+  if (!newPassword) return res.send({status: false, message: "Password fields is required"});
 
-export const resetPassword = async (req, res) => {}
+  try {
+    let user = await User.findOne({email});
+    if (!user) return res.send({status: false, message: "User not found with this email"});
+
+    if (user.otp != otp) return res.send({status: false, message:"OTP doesn't matched"});
+    // if otp were verified
+    user.otp = null;
+    user.isVerified = true;
+
+    // encrypting password
+    // 12345 :: bcryptjs => $dndwoqdh238ydh23/d23d32d2
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(newPassword, salt);
+
+    user.password = hashedPassword;
+    await user.save();
+    return res.send({status: true, message: "Password changed successfull"})
+  } catch (error) {
+    console.log("Error: ", error)
+  }
+}

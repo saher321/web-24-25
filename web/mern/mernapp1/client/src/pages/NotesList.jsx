@@ -20,7 +20,7 @@ const NotesList = () => {
         const data = await res.json();
         console.log(data.notes);
         if (data) {
-          setNotes(data.notes);
+          setNotes(data.notes || []);
           setIsLoading(false)
         } else {
           toast.error("Failed to show notes");
