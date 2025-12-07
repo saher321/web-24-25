@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///E:/tosiq/tosiq-24-25/web/nextjsapp/agencynextapp/app/%28pages%29/about-us/page.jsx"],"sourcesContent":["'user client'\r\nimport React from 'react'\r\n\r\nconst page = () => {\r\n  return (\r\n    <div className='m-4 shadow p-3 rounded'>About us page</div>\r\n  )\r\n}\r\n\r\nexport default page"],"names":[],"mappings":";;;;;AACA;AADA;;;AAGA,MAAM,OAAO;IACX,qBACE,8OAAC;QAAI,WAAU;kBAAyB;;;;;;AAE5C;uCAEe"}}]
+}

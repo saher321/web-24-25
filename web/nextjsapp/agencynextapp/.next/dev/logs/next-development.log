@@ -1,0 +1,153 @@
+[00:00:01.751] Server  LOG      ✓ Ready in 1182ms
+[00:00:18.600] Server  LOG      ○ Compiling / ...
+[00:00:19.492] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:19.677] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:25.854] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:25.975] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:43.375] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:49.715] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:07.922] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:08.046] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about-us" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:03:34.440] Server  LOG      ✓ Compiled in 36ms
+[00:03:43.577] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true clas clas true clas
+[00:04:21.711] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:43.746] Server  LOG      ✓ Compiled in 39ms
+[00:06:47.886] Server  LOG      ✓ Compiled in 37ms
+[00:06:52.319] Server  LOG      ✓ Compiled in 56ms
+[00:07:01.250] Server  LOG      ✓ Compiled in 35ms
+[00:07:05.658] Server  LOG      ✓ Compiled in 47ms
+[00:11:00.579] Browser ERROR   ./app/(pages)/about-us/page.jsx:6:22
+Parsing ecmascript source code failed
+  4 | const page = () => {
+  5 |   return (
+> 6 |     <>About us page</div>
+    |                      ^^^
+  7 |   )
+  8 | }
+  9 |
+
+Expected '>', got 'div'
+[00:11:01.570] Browser ERROR   ./app/(pages)/about-us/page.jsx:6:31
+Parsing ecmascript source code failed
+  4 | const page = () => {
+  5 |   return (
+> 6 |     <WebLayout>About us page</div>
+    |                               ^^^
+  7 |   )
+  8 | }
+  9 |
+
+Expected corresponding JSX closing tag for <WebLayout>
+[00:11:04.576] Browser ERROR   ./app/(pages)/about-us/page.jsx:7:31
+Parsing ecmascript source code failed
+   5 | const page = () => {
+   6 |   return (
+>  7 |     <WebLayout>About us page</div>
+     |                               ^^^
+   8 |   )
+   9 | }
+  10 |
+
+Expected corresponding JSX closing tag for <WebLayout>
+[00:11:06.573] Server  LOG      ✓ Compiled in 235ms
+[00:11:10.118] Server  LOG      ✓ Compiled in 27ms
+[00:11:19.163] Server  LOG      ✓ Compiled in 40ms
+[00:11:37.153] Server  LOG      ✓ Compiled in 39ms
+[00:11:48.213] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:55.568] Browser ERROR   ./app/components/Navbar.jsx:5:10
+Parsing ecmascript source code failed
+   3 |
+   4 | const Navbar = () => {
+>  5 |   return (
+     |          ^
+>  6 |     
+     | ^^^^
+>  7 |   )
+     | ^^^^
+   8 | }
+   9 |
+  10 | export default Navbar
+
+Parenthesized expression cannot be empty
+
+Import trace:
+  Server Component:
+    ./app/components/Navbar.jsx
+    ./app/layouts/WebLayout.jsx
+    ./app/(pages)/about-us/page.jsx
+[00:14:04.837] Server  LOG      ✓ Compiled in 44ms
+[00:15:29.249] Server  LOG      ✓ Compiled in 61ms
+[00:18:00.560] Browser ERROR   ./app/page.jsx:4:10
+Parsing ecmascript source code failed
+  2 |
+  3 | const page = () => {
+> 4 |   return (
+    |          ^
+> 5 |     
+    | ^^^^
+> 6 |   )
+    | ^^^^
+  7 | }
+  8 |
+  9 | export default page
+
+Parenthesized expression cannot be empty
+[00:18:02.573] Browser ERROR   ./app/page.jsx:6:3
+Parsing ecmascript source code failed
+  4 |   return (
+  5 |     <Web
+> 6 |   )
+    |   ^
+  7 | }
+  8 |
+  9 | export default page
+
+Unexpected token `)`. Expected jsx identifier
+[00:18:04.566] Browser ERROR   ./app/page.jsx:7:3
+Parsing ecmascript source code failed
+   5 |   return (
+   6 |     <WebLayout
+>  7 |   )
+     |   ^
+   8 | }
+   9 |
+  10 | export default page
+
+Unexpected token `)`. Expected jsx identifier
+[00:18:05.342] Server  LOG      ✓ Compiled in 118ms
