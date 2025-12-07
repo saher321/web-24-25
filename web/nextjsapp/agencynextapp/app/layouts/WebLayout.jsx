@@ -6,7 +6,9 @@ export const WebLayout = ({children}) => {
     <div>
       <Navbar />
 
-      {children}
+      <div className='m-5'>
+        {children}
+      </div>
       
       <footer>
         All right reserved.

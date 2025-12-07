@@ -1,13 +1,368 @@
-[00:00:01.751] Server  LOG      ✓ Ready in 1182ms
-[00:00:18.600] Server  LOG      ○ Compiling / ...
-[00:00:19.492] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:19.677] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:25.854] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:25.975] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:43.375] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:49.715] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:07.922] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:08.046] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:01.641] Server  LOG      ✓ Ready in 1048ms
+[00:00:08.539] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:31.762] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:40.854] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:38.324] Browser ERROR   ./app/(pages)/blogs/page.jsx:4:1
+Parsing ecmascript source code failed
+  2 | import React from 'react'
+  3 | import 
+> 4 | const page = () => {
+    | ^^^^^
+  5 |   return (
+  6 |     <WebLayout>
+  7 |         <div>Blogs list</div>
+
+Expected 'from', got 'const'
+[00:17:41.321] Browser ERROR   ./app/(pages)/blogs/page.jsx:4:1
+Parsing ecmascript source code failed
+  2 | import React from 'react'
+  3 | import {}
+> 4 | const page = () => {
+    | ^^^^^
+  5 |   return (
+  6 |     <WebLayout>
+  7 |         <div>Blogs list</div>
+
+Expected 'from', got 'const'
+[00:17:44.330] Browser ERROR   ./app/(pages)/blogs/page.jsx:4:1
+Parsing ecmascript source code failed
+  2 | import React from 'react'
+  3 | import {blogs }
+> 4 | const page = () => {
+    | ^^^^^
+  5 |   return (
+  6 |     <WebLayout>
+  7 |         <div>Blogs list</div>
+
+Expected 'from', got 'const'
+[00:17:46.320] Browser ERROR   ./app/(pages)/blogs/page.jsx:4:1
+Parsing ecmascript source code failed
+  2 | import React from 'react'
+  3 | import {blogs}
+> 4 | const page = () => {
+    | ^^^^^
+  5 |   return (
+  6 |     <WebLayout>
+  7 |         <div>Blogs list</div>
+
+Expected 'from', got 'const'
+[00:18:17.327] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. diov
+[00:18:18.330] Browser ERROR   ./app/(pages)/blogs/page.jsx:8:21
+Parsing ecmascript source code failed
+   6 |     <WebLayout>
+   7 |         <div>Blogs list</div>
+>  8 |         <div></diov>
+     |                     ^
+>  9 |     </WebLayout>
+     | ^^^^^
+  10 |   )
+  11 | }
+  12 |
+
+Expected '</', got 'jsx text (
+    )'
+[00:19:09.841] Server  ERROR   E:\tosiq\tosiq-24-25\web\nextjsapp\agencynextapp\.next\dev\server\chunks\ssr\[root-of-the-server]__6b8a28e4._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:19:09.845] Server  ERROR    ⨯ TypeError: undefined is not a function
+[00:19:10.318] Browser ERROR   uncaughtError: TypeError: undefined is not a function
+[00:19:18.323] Browser ERROR   ./app/(pages)/blogs/page.jsx:13:11
+Parsing ecmascript source code failed
+  11 |               
+  12 |             )
+> 13 |           })}
+     |           ^
+  14 |         </div>
+  15 |     </WebLayout>
+  16 |   )
+
+Expected '</', got '}'
+[00:19:27.729] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:41.321] Browser ERROR   ./app/(pages)/blogs/page.jsx:14:11
+Parsing ecmascript source code failed
+  12 |               
+  13 |             )
+> 14 |           })}
+     |           ^
+  15 |           </div>
+  16 |         </div>
+  17 |     </WebLayout>
+
+Expected '</', got '}'
+[00:19:43.324] Browser ERROR   ./app/(pages)/blogs/page.jsx:14:13
+Parsing ecmascript source code failed
+  12 |                 
+  13 |               )
+> 14 |             })}
+     |             ^
+  15 |           </div>
+  16 |         </div>
+  17 |     </WebLayout>
+
+Expected '</', got '}'
+[00:19:58.329] Browser ERROR   ./app/(pages)/blogs/page.jsx:14:15
+Parsing ecmascript source code failed
+  12 |                <div> 
+  13 |               )
+> 14 |             })}
+     |               ^
+  15 |           </div>
+  16 |         </div>
+  17 |     </WebLayout>
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+[00:19:58.329] Browser ERROR   ./app/(pages)/blogs/page.jsx:16:10
+Parsing ecmascript source code failed
+  14 |             })}
+  15 |           </div>
+> 16 |         </div>
+     |          ^^^^^
+  17 |     </WebLayout>
+  18 |   )
+  19 | }
+
+Unterminated regexp literal
+[00:20:00.317] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the top-level render call using <div>. 
+[00:20:26.319] Browser ERROR   ./app/(pages)/blogs/page.jsx:12:28
+Parsing ecmascript source code failed
+  10 |             {blogs.map( (blog) => {
+  11 |               return (
+> 12 |                <div key={} className='col-span-6'>
+     |                            ^^^^^^^^^
+  13 |                 
+  14 |                </div> 
+  15 |               )
+
+Expected '</', got 'className'
+[00:22:54.326] Browser ERROR   ./app/(pages)/blogs/page.jsx:14:31
+Parsing ecmascript source code failed
+  12 |                <div key={blog.id} className='col-span-6'>
+  13 |                 <div className='shadow-lg rounded p-3'>
+> 14 |                 <span children;la>#{blog.id}</span> {blog.title}
+     |                               ^
+  15 |                 </div>
+  16 |                </div> 
+  17 |               )
+
+Expected '</', got ';'
+[00:22:59.327] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
+[00:24:50.317] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
+Open your browser's console to view the Component stack trace.
+[00:24:51.979] Server  ERROR   E:\tosiq\tosiq-24-25\web\nextjsapp\agencynextapp\.next\dev\server\chunks\ssr\node_modules_63f05317._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:51.983] Server  ERROR    ⨯ Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
+[00:24:52.373] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:53.133] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
+Open your browser's console to view the Component stack trace.
+[00:25:03.194] Browser ERROR   ./app/(pages)/blogs/page.jsx:14:30
+Parsing ecmascript source code failed
+  12 |               return (
+  13 |                <div key={blog.id} className='col-span-6'>
+> 14 |                 <Link href={}>
+     |                              ^
+  15 |                   <div className='shadow-lg rounded p-3'>
+  16 |                     <span className='bg-purple-600 text-white p-1 rounded-full shadow-md'>#{blog.id}</span> {blog.title}
+  17 |                   </div>
+
+Expression expected
+[00:25:03.194] Browser ERROR   ./app/(pages)/blogs/page.jsx:18:18
+Parsing ecmascript source code failed
+  16 |                     <span className='bg-purple-600 text-white p-1 rounded-full shadow-md'>#{blog.id}</span> {blog.title}
+  17 |                   </div>
+> 18 |                 </Link>
+     |                  ^^^^^^
+  19 |                </div> 
+  20 |               )
+  21 |             })}
+
+Unterminated regexp literal
+[00:25:14.149] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:19.751] Browser ERROR   ./app/(pages)/blogs/page.jsx:14:39
+Parsing ecmascript source code failed
+  12 |               return (
+  13 |                <div key={blog.id} className='col-span-6'>
+> 14 |                 <Link href={`/blogs/${}`}>
+     |                                       ^
+  15 |                   <div className='shadow-lg rounded p-3'>
+  16 |                     <span className='bg-purple-600 text-white p-1 rounded-full shadow-md'>#{blog.id}</span> {blog.title}
+  17 |                   </div>
+
+Expected '</', got '}'
+[00:25:23.169] Server  ERROR   E:\tosiq\tosiq-24-25\web\nextjsapp\agencynextapp\.next\dev\server\chunks\ssr\[root-of-the-server]__6b8a28e4._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:23.171] Server  ERROR    ⨯ ReferenceError: d is not defined
+[00:25:23.313] Browser ERROR   uncaughtError: ReferenceError: d is not defined
+[00:25:24.662] Browser ERROR   ./app/(pages)/blogs/page.jsx:14:39
+Parsing ecmascript source code failed
+  12 |               return (
+  13 |                <div key={blog.id} className='col-span-6'>
+> 14 |                 <Link href={`/blogs/${}`}>
+     |                                       ^
+  15 |                   <div className='shadow-lg rounded p-3'>
+  16 |                     <span className='bg-purple-600 text-white p-1 rounded-full shadow-md'>#{blog.id}</span> {blog.title}
+  17 |                   </div>
+
+Expected '</', got '}'
+[00:25:29.915] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:40.988] Browser ERROR   ./app/(pages)/blogs/page.jsx:14:39
+Parsing ecmascript source code failed
+  12 |               return (
+  13 |                <div key={blog.id} className='col-span-6'>
+> 14 |                 <Link href={`/blogs/${}`}>
+     |                                       ^
+  15 |                   <div className='shadow-lg rounded p-3'>
+  16 |                     <span className='bg-purple-600 text-white p-1 rounded-full shadow-md'>#{blog.id}</span> {blog.title}
+  17 |                   </div>
+
+Expected '</', got '}'
+[00:26:55.318] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:2:10
+Ecmascript file had an error
+  1 | import { WebLayout } from '@/app/layouts/WebLayout'
+> 2 | import { useParams } from 'next/navigation'
+    |          ^^^^^^^^^
+  3 | import React from 'react'
+  4 |
+  5 | const page = () => {
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:26:56.328] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:2:10
+Ecmascript file had an error
+  1 | import { WebLayout } from '@/app/layouts/WebLayout'
+> 2 | import { useParams } from 'next/navigation'
+    |          ^^^^^^^^^
+  3 | import React from 'react'
+  4 |
+  5 | const page = () => {
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:26:59.314] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:2:10
+Ecmascript file had an error
+  1 | import { WebLayout } from '@/app/layouts/WebLayout'
+> 2 | import { useParams } from 'next/navigation'
+    |          ^^^^^^^^^
+  3 | import React from 'react'
+  4 |
+  5 | const page = () => {
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:11.330] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:2:10
+Ecmascript file had an error
+  1 | import { WebLayout } from '@/app/layouts/WebLayout'
+> 2 | import { useParams } from 'next/navigation'
+    |          ^^^^^^^^^
+  3 | import React from 'react'
+  4 |
+  5 | const page = () => {
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:13.325] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:2:10
+Ecmascript file had an error
+  1 | import { WebLayout } from '@/app/layouts/WebLayout'
+> 2 | import { useParams } from 'next/navigation'
+    |          ^^^^^^^^^
+  3 | import React from 'react'
+  4 |
+  5 | const page = () => {
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:15.197] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:2:10
+Ecmascript file had an error
+  1 | import { WebLayout } from '@/app/layouts/WebLayout'
+> 2 | import { useParams } from 'next/navigation'
+    |          ^^^^^^^^^
+  3 | import React from 'react'
+  4 |
+  5 | const page = () => {
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:26.582] Server  ERROR   E:\tosiq\tosiq-24-25\web\nextjsapp\agencynextapp\.next\dev\server\chunks\ssr\[root-of-the-server]__228efb26._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:26.583] Server  ERROR    ⨯ ReferenceError: useParams is not defined
+[00:27:27.320] Browser ERROR   uncaughtError: ReferenceError: useParams is not defined
+[00:27:31.321] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:6:3
+Parsing ecmascript source code failed
+  4 | const page = () => {
+  5 |   const 
+> 6 |   return (
+    |   ^^^^^^
+  7 |     <WebLayout>
+  8 |        Blog Detail page #{params?.id}
+  9 |     </WebLayout>
+
+Expected ident
+[00:27:35.924] Server  ERROR   E:\tosiq\tosiq-24-25\web\nextjsapp\agencynextapp\.next\dev\server\chunks\ssr\[root-of-the-server]__228efb26._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:35.926] Server  ERROR    ⨯ ReferenceError: use is not defined
+[00:27:36.321] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:36.808] Browser ERROR   uncaughtError: ReferenceError: use is not defined
+[00:27:36.978] Server  ERROR   E:\tosiq\tosiq-24-25\web\nextjsapp\agencynextapp\.next\dev\server\chunks\ssr\[root-of-the-server]__228efb26._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:36.980] Server  ERROR    ⨯ ReferenceError: useP is not defined
+[00:27:37.280] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:38.320] Browser ERROR   uncaughtError: ReferenceError: useP is not defined
+[00:27:40.245] Server  ERROR   E:\tosiq\tosiq-24-25\web\nextjsapp\agencynextapp\.next\dev\server\chunks\ssr\[root-of-the-server]__228efb26._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:40.246] Server  ERROR    ⨯ ReferenceError: useParams is not defined
+[00:27:40.696] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:41.329] Browser ERROR   uncaughtError: ReferenceError: useParams is not defined
+[00:27:44.322] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:2:10
+Ecmascript file had an error
+  1 | import { WebLayout } from '@/app/layouts/WebLayout'
+> 2 | import { useParams } from 'next/navigation'
+    |          ^^^^^^^^^
+  3 | import React from 'react'
+  4 |
+  5 | const page = () => {
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:47.323] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:2:10
+Ecmascript file had an error
+  1 | import { WebLayout } from '@/app/layouts/WebLayout'
+> 2 | import { useParams } from 'next/navigation'
+    |          ^^^^^^^^^
+  3 | import React from 'react'
+  4 |
+  5 | const page = () => {
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:57.320] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:2:10
+Ecmascript file had an error
+  1 | import { WebLayout } from '@/app/layouts/WebLayout'
+> 2 | import { useParams } from 'next/navigation'
+    |          ^^^^^^^^^
+  3 | import React from 'react'
+  4 |
+  5 | const page = () => {
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:28:29.324] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:3:10
+Ecmascript file had an error
+  1 |
+  2 | import { WebLayout } from '@/app/layouts/WebLayout'
+> 3 | import { useParams } from 'next/navigation'
+    |          ^^^^^^^^^
+  4 | import React from 'react'
+  5 |
+  6 | const page = () => {
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:28:34.864] Server  LOG      ✓ Compiled in 1551ms
+[00:28:35.449] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:35.565] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -25,7 +380,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/about-us" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/blogs/5" notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -42,112 +397,512 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:03:34.440] Server  LOG      ✓ Compiled in 36ms
-[00:03:43.577] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
-
-If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true clas clas true clas
-[00:04:21.711] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:43.746] Server  LOG      ✓ Compiled in 39ms
-[00:06:47.886] Server  LOG      ✓ Compiled in 37ms
-[00:06:52.319] Server  LOG      ✓ Compiled in 56ms
-[00:07:01.250] Server  LOG      ✓ Compiled in 35ms
-[00:07:05.658] Server  LOG      ✓ Compiled in 47ms
-[00:11:00.579] Browser ERROR   ./app/(pages)/about-us/page.jsx:6:22
+[00:28:58.718] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:28:59.147] Server  LOG      ✓ Compiled in 36ms
+[00:28:59.466] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:01.257] Server  LOG      ✓ Compiled in 46ms
+[00:29:02.316] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:9:3
 Parsing ecmascript source code failed
-  4 | const page = () => {
-  5 |   return (
-> 6 |     <>About us page</div>
-    |                      ^^^
-  7 |   )
-  8 | }
-  9 |
+   7 |   const params = useParams();
+   8 |   const 
+>  9 |   return (
+     |   ^^^^^^
+  10 |     <WebLayout>
+  11 |        Blog Detail page #{params?.id}
+  12 |     </WebLayout>
 
-Expected '>', got 'div'
-[00:11:01.570] Browser ERROR   ./app/(pages)/about-us/page.jsx:6:31
-Parsing ecmascript source code failed
-  4 | const page = () => {
-  5 |   return (
-> 6 |     <WebLayout>About us page</div>
-    |                               ^^^
-  7 |   )
-  8 | }
-  9 |
+Expected ident
 
-Expected corresponding JSX closing tag for <WebLayout>
-[00:11:04.576] Browser ERROR   ./app/(pages)/about-us/page.jsx:7:31
-Parsing ecmascript source code failed
-   5 | const page = () => {
-   6 |   return (
->  7 |     <WebLayout>About us page</div>
-     |                               ^^^
-   8 |   )
-   9 | }
-  10 |
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
 
-Expected corresponding JSX closing tag for <WebLayout>
-[00:11:06.573] Server  LOG      ✓ Compiled in 235ms
-[00:11:10.118] Server  LOG      ✓ Compiled in 27ms
-[00:11:19.163] Server  LOG      ✓ Compiled in 40ms
-[00:11:37.153] Server  LOG      ✓ Compiled in 39ms
-[00:11:48.213] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:55.568] Browser ERROR   ./app/components/Navbar.jsx:5:10
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:29:10.353] Server  LOG      ✓ Compiled in 63ms
+[00:29:11.322] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:9:3
 Parsing ecmascript source code failed
-   3 |
-   4 | const Navbar = () => {
->  5 |   return (
-     |          ^
->  6 |     
-     | ^^^^
->  7 |   )
-     | ^^^^
-   8 | }
+   7 |   const params = useParams();
+   8 |   const [blog, setBlog] = 
+>  9 |   return (
+     |   ^^^^^^
+  10 |     <WebLayout>
+  11 |        Blog Detail page #{params?.id}
+  12 |     </WebLayout>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:29:13.889] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:29:14.337] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:17.559] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:29:17.577] Server  LOG      ✓ Compiled in 38ms
+[00:29:17.802] Server  ERROR   E:\tosiq\tosiq-24-25\web\nextjsapp\agencynextapp\.next\dev\server\chunks\ssr\[root-of-the-server]__eed7da94._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:29:17.803] Server  ERROR    ⨯ ReferenceError: nnull is not defined
+[00:29:18.127] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:18.414] Browser ERROR   uncaughtError: ReferenceError: nnull is not defined
+[00:29:19.071] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:29:19.072] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:29:19.073] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:29:19.297] Server  LOG      ✓ Compiled in 29ms
+[00:29:19.560] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:45.384] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:29:45.599] Server  ERROR   E:\tosiq\tosiq-24-25\web\nextjsapp\agencynextapp\.next\dev\server\chunks\ssr\[root-of-the-server]__eed7da94._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:29:45.600] Server  ERROR    ⨯ ReferenceError: useEf is not defined
+[00:29:45.630] Server  LOG      ✓ Compiled in 28ms
+[00:29:46.054] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:46.317] Browser ERROR   uncaughtError: ReferenceError: useEf is not defined
+[00:29:46.923] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:29:46.923] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:29:46.925] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:29:47.126] Server  LOG      ✓ Compiled in 36ms
+[00:29:47.336] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:38.533] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:30:38.672] Server  LOG      ✓ Compiled in 44ms
+[00:30:38.948] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:18.326] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:10:21
+Parsing ecmascript source code failed
+   8 |   const [blog, setBlog] = useState(null);
    9 |
-  10 | export default Navbar
+> 10 |   useEffect (()=> {+})
+     |                     ^
+  11 |
+  12 |   return (
+  13 |     <WebLayout>
 
-Parenthesized expression cannot be empty
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:31:18.933] Server  LOG      ✓ Compiled in 31ms
+[00:31:35.320] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:11:11
+Parsing ecmascript source code failed
+   9 |
+  10 |   useEffect (()=> {
+> 11 |     const get
+     |           ^^^
+  12 |   }, [params.id])
+  13 |
+  14 |   return (
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:31:38.319] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:11:11
+Parsing ecmascript source code failed
+   9 |
+  10 |   useEffect (()=> {
+> 11 |     const getDetail
+     |           ^^^^^^^^^
+  12 |   }, [params.id])
+  13 |
+  14 |   return (
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:31:43.024] Server  LOG      ✓ Compiled in 26ms
+[00:32:03.317] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:13:5
+Parsing ecmascript source code failed
+  11 |     const getDetail = () => {
+  12 |       const blog = 
+> 13 |     }
+     |     ^
+  14 |     getDetail()
+  15 |   }, [params.id])
+  16 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:32:07.996] Server  LOG      ✓ Compiled in 31ms
+[00:32:10.325] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:12:37
+Parsing ecmascript source code failed
+  10 |   useEffect (()=> {
+  11 |     const getDetail = () => {
+> 12 |       const blog = blogs.find(() => )
+     |                                     ^
+  13 |     }
+  14 |     getDetail()
+  15 |   }, [params.id])
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:32:15.325] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:12:41
+Parsing ecmascript source code failed
+  10 |   useEffect (()=> {
+  11 |     const getDetail = () => {
+> 12 |       const blog = blogs.find((blog) => )
+     |                                         ^
+  13 |     }
+  14 |     getDetail()
+  15 |   }, [params.id])
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:32:17.320] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:12:42
+Parsing ecmascript source code failed
+  10 |   useEffect (()=> {
+  11 |     const getDetail = () => {
+> 12 |       const blog = blogs.find((blog) =>  )
+     |                                          ^
+  13 |     }
+  14 |     getDetail()
+  15 |   }, [params.id])
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:32:20.975] Server  LOG      ✓ Compiled in 25ms
+[00:32:42.319] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:14:11
+Parsing ecmascript source code failed
+  12 |     const getDetail = () => {
+  13 |       const blog = blogs.find((blog) => params.id == blog.id );
+> 14 |       if ()
+     |           ^
+  15 |     }
+  16 |     getDetail()
+  17 |   }, [params.id])
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:32:43.317] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:15:5
+Parsing ecmascript source code failed
+  13 |       const blog = blogs.find((blog) => params.id == blog.id );
+  14 |       if (blog)
+> 15 |     }
+     |     ^
+  16 |     getDetail()
+  17 |   }, [params.id])
+  18 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:32:44.320] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:15:5
+Parsing ecmascript source code failed
+  13 |       const blog = blogs.find((blog) => params.id == blog.id );
+  14 |       if (blog) 
+> 15 |     }
+     |     ^
+  16 |     getDetail()
+  17 |   }, [params.id])
+  18 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:32:46.101] Server  LOG      ✓ Compiled in 20ms
+[00:34:28.788] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:34:29.145] Server  LOG      ✓ Compiled in 31ms
+[00:34:29.485] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:30.078] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:34:30.095] Server  LOG      ✓ Compiled in 29ms
+[00:34:30.482] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:34.404] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:34:34.631] Server  LOG      ✓ Compiled in 24ms
+[00:34:34.899] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:38.821] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:34:39.035] Server  LOG      ✓ Compiled in 46ms
+[00:34:39.231] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:46.341] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:34:46.565] Server  LOG      ✓ Compiled in 28ms
+[00:34:46.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:50.285] Server  LOG      ✓ Compiled in 28ms
+[00:34:51.318] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:32:13
+Parsing ecmascript source code failed
+  30 |             {blog?.title}
+  31 |           </div>
+> 32 |           <p?>
+     |             ^
+  33 |         </div>
+  34 |        </div>
+  35 |     </WebLayout>
+
+Expected '</', got '?'
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:34:53.357] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:34:53.779] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:58.397] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:34:58.606] Server  ERROR   E:\tosiq\tosiq-24-25\web\nextjsapp\agencynextapp\.next\dev\server\chunks\ssr\[root-of-the-server]__b8379cb2._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:34:58.607] Server  ERROR    ⨯ TypeError: Cannot read properties of null (reading 'content')
+[00:34:58.635] Server  LOG      ✓ Compiled in 22ms
+[00:34:58.838] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:59.315] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'content')
+[00:35:24.219] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:35:24.224] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:35:24.225] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:35:24.239] Server  LOG      ✓ Compiled in 29ms
+[00:35:24.719] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:44.043] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:35:44.271] Server  LOG      ✓ Compiled in 36ms
+[00:35:44.504] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:45.967] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:35:46.178] Server  LOG      ✓ Compiled in 21ms
+[00:35:46.540] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:52.227] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:35:52.435] Server  LOG      ✓ Compiled in 29ms
+[00:35:52.626] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:56.253] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:35:56.479] Server  LOG      ✓ Compiled in 36ms
+[00:35:56.708] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:58.899] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:35:59.121] Server  LOG      ✓ Compiled in 28ms
+[00:35:59.363] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:02.089] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:36:02.297] Server  LOG      ✓ Compiled in 27ms
+[00:36:02.500] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:05.320] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:36:05.526] Server  LOG      ✓ Compiled in 23ms
+[00:36:06.106] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:08.357] Server  LOG      ✓ Compiled in 23ms
+[00:36:09.322] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:35:47
+Parsing ecmascript source code failed
+  33 |             {blog?.content}
+  34 |           </p>
+> 35 |           <smal> {blog?.author} &bull; {blog?.}</smal>
+     |                                               ^
+  36 |         </div>
+  37 |        </div>
+  38 |     </WebLayout>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:36:10.732] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:36:11.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:12.171] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:36:12.384] Server  LOG      ✓ Compiled in 26ms
+[00:36:12.672] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:19.487] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:36:19.789] Server  LOG      ✓ Compiled in 26ms
+[00:36:20.001] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:24.092] Server  LOG      ✓ Compiled in 27ms
+[00:36:24.326] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:35:60
+Parsing ecmascript source code failed
+  33 |             {blog?.content}
+  34 |           </p>
+> 35 |           <small> {blog?.author} &bull; {blog?.date}</smal>
+     |                                                            ^
+> 36 |         </div>
+     | ^^^^^^^^^
+  37 |        </div>
+  38 |     </WebLayout>
+  39 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:36:26.515] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:36:26.874] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:21.838] Server  LOG      ✓ Compiled in 34ms
+[00:38:21.946] Browser ERROR   ./app/utils/blogs.js:74:14
+Parsing ecmascript source code failed
+  72 | ];
+  73 |
+> 74 | export const blogs1
+     |              ^^^^^^
+  75 |
+
+'const' declarations must be initialized
 
 Import trace:
   Server Component:
-    ./app/components/Navbar.jsx
-    ./app/layouts/WebLayout.jsx
-    ./app/(pages)/about-us/page.jsx
-[00:14:04.837] Server  LOG      ✓ Compiled in 44ms
-[00:15:29.249] Server  LOG      ✓ Compiled in 61ms
-[00:18:00.560] Browser ERROR   ./app/page.jsx:4:10
-Parsing ecmascript source code failed
-  2 |
-  3 | const page = () => {
-> 4 |   return (
-    |          ^
-> 5 |     
-    | ^^^^
-> 6 |   )
-    | ^^^^
-  7 | }
-  8 |
-  9 | export default page
+    ./app/utils/blogs.js
+    ./app/(pages)/blogs/page.jsx
+[00:38:25.965] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/utils/blogs.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:38:26.425] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:46.101] Browser LOG     No data found
+[00:38:46.101] Browser LOG     No data found
+[00:39:13.615] Server  LOG      ✓ Compiled in 117ms
+[00:39:14.329] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:3:1
+Export blogs1 doesn't exist in target module
+  1 | 'use client'
+  2 | import { WebLayout } from '@/app/layouts/WebLayout'
+> 3 | import { blogs1 } from '@/app/utils/blogs'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { useParams } from 'next/navigation'
+  5 | import React, { useEffect, useState } from 'react'
+  6 |
 
-Parenthesized expression cannot be empty
-[00:18:02.573] Browser ERROR   ./app/page.jsx:6:3
-Parsing ecmascript source code failed
-  4 |   return (
-  5 |     <Web
-> 6 |   )
-    |   ^
-  7 | }
-  8 |
-  9 | export default page
+The export blogs1 was not found in module [project]/app/utils/blogs.js [app-client] (ecmascript).
+Did you mean to import blogs?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
-Unexpected token `)`. Expected jsx identifier
-[00:18:04.566] Browser ERROR   ./app/page.jsx:7:3
-Parsing ecmascript source code failed
-   5 |   return (
-   6 |     <WebLayout
->  7 |   )
-     |   ^
-   8 | }
-   9 |
-  10 | export default page
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
 
-Unexpected token `)`. Expected jsx identifier
-[00:18:05.342] Server  LOG      ✓ Compiled in 118ms
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:39:14.329] Browser ERROR   ./app/(pages)/blogs/[id]/page.jsx:3:1
+Export blogs1 doesn't exist in target module
+  1 | 'use client'
+  2 | import { WebLayout } from '@/app/layouts/WebLayout'
+> 3 | import { blogs1 } from '@/app/utils/blogs'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { useParams } from 'next/navigation'
+  5 | import React, { useEffect, useState } from 'react'
+  6 |
+
+The export blogs1 was not found in module [project]/app/utils/blogs.js [app-ssr] (ecmascript).
+Did you mean to import blogs?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component Browser]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/(pages)/blogs/[id]/page.jsx [Client Component SSR]
+    ./app/(pages)/blogs/[id]/page.jsx [Server Component]
+[00:39:16.996] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/utils/blogs.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:39:17.901] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:18.322] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/blogs/1" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:39:18.322] Browser ERROR   uncaughtError: ReferenceError: blogs1 is not defined
+[00:39:19.506] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:39:19.522] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(pages)/blogs/[id]/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:39:19.524] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:39:19.538] Server  LOG      ✓ Compiled in 30ms
+[00:39:20.195] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
